@@ -435,3 +435,48 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Button Styles */
+.button-group {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 1rem;
+    border: 1px solid var(--text-primary);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: var(--text-primary);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--text-primary);
+}
+
+.cta-button.secondary:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+}
+
+.cta-button.small {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+}
